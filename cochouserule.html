@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>とみーのお部屋</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-logo container-fluid">
+      <h1>とみーのお部屋</h1>
+    </div>
+    <div class="header-menu">
+      <ul>
+        <li><a href="passscenario.html" class="menu-list">通過済みシナリオ</a></li>
+        <li><a href="gmlist.html" class="menu-list">GM可能シナリオ</a></li>
+        <li><a href="cochouserule.html" class="menu-list">CoC6ハウスルール</a></li>
+        <li><a href="https://freecalend.com/open/mem146824_nopopon" class="menu-list"><i class="bi bi-calendar3"></i> 卓予定</a></li>
+        <li><a href="https://twitter.com/tomysan_103" class="menu-list"><i class="bi bi-twitter"></i> Twitter</a></li>
+      </ul>
+    </div>
+    <div class="dropdown container-fluid header-menu-sp">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+        メニュー
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button"><a href="passscenario.html" class="menu-list">通過済みシナリオ</a></button></li>
+        <li><button class="dropdown-item" type="button"><a href="gmlist.html" class="menu-list">GM可能シナリオ</a></button></li>
+        <li><button class="dropdown-item" type="button"><a href="cochouserule.html" class="menu-list">CoC6ハウスルール</a></button></li>
+        <li><button class="dropdown-item" type="button"><a href="https://freecalend.com/open/mem146824_nopopon" class="menu-list"><i class="bi bi-calendar3"></i> 卓予定</a></button></li>
+        <li><button class="dropdown-item" type="button"><a href="https://twitter.com/tomysan_103" class="menu-list"><i class="bi bi-twitter"></i> Twitter</a></button></li>
+      </ul>
+    </div>
+  </header>
+  <div class="content-main container-md">
+    <h1>クトルゥフ神話TRPG ハウスルール</h1>
+    <div class="alert alert-info" role="alert"><i class="bi bi-check-square-fill"></i> シナリオ等に特記や指示がある場合は、本ハウスルールよりもそちらが優先されます。</div>
+    <h2>6版ハウスルール</h2>
+    <div class="alert alert-info" role="alert"><i class="bi bi-pencil"></i> 2022/7/9 最終更新 成長ロールについて新設。<br>能力値の決定について改定-入れ替えルールを追加した。<br>回避ロールについて、上限及び、CoC6ルルブにある、回避のオプション(3回ルール)を適用した。(下記赤字箇所)<br>探索者の創造に於いてランダムダイスの振れる回数を改定。その代わり、初心者緩和ルールを撤廃。<br>表記ゆれ、誤植を修正。またWebページで見られるように移植。</div>
+    <h3><i class="bi bi-book"></i> とみーの持っているルールブック</h3>
+    <p>クトルゥフ神話TRPG 6版ルールブック 第36刷 2021/12/5発刊</p>
+    <h3><i class="bi bi-file-earmark-person"></i> 探索者の創造-能力値の決定 <span class="badge bg-info text-dark">ルール改定</span></h3>
+    <p><span class="important-text">ランダムダイス10回まで振り直し可能とする。(全体振り・一か所振り両方をカウントします。)</span><br>
+    最初のダイスロールはカウントしないものとする。<br>
+    <span class="delete-rule">ただし初心者卓等は緩和をする場合あり。</span><br>
+    <span class="important-text">同値のダイスロール同士の能力については、能力値の入れ替えを可とする。(回数制限はない。)</span></p>
+    <h3><i class="bi bi-pencil-square"></i> 技能値と技能の取得について</h3>
+    <p>職業に記載がある技能については、必ず職業Pの技能値を最低1以上は割り振るものとする<br>
+    技能値は初期P、職業P、興味Pを合計した最大値を85までとする。</p>
+    <div class="alert alert-warning" role="alert"><i class="bi bi-info-circle"></i> 回避技能は特殊なルールを定めています。詳細は下記"回避技能について"を参照してください。</div>
+    <h3>回避技能について  <span class="badge bg-info text-dark">ルール改定</span></h3>
+    <p><span class="important-text">回避の技能値の最大はDex*5(Dexを5倍)もしくは50のいずれか高い方とする。</span><br>
+    1ラウンド中に回避と攻撃は両方行えるものとする。<br>
+    <span class="important-text">回避は1ラウンド3回まで可能。その際、下表のルールを適用する。</span></p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">回避回数(ラウンド)</th>
+          <th scope="col">ダイスロール</th>
+          <th scope="col">説明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1回目</th>
+          <td>回避技能</td>
+          <td>回避技能そのままロール</td>
+        </tr>
+        <tr>
+          <th scope="row">2回目</th>
+          <td>回避技能/2</td>
+          <td>回避技能の半分(小数点切り捨て)</td>
+        </tr>
+        <tr>
+          <th scope="row">3回目</th>
+          <td>回避技能/3</td>
+          <td>回避技能の三分の一(小数点切り捨て)</td>
+        </tr>
+        <tr>
+          <th scope="row">4回目以降</th>
+          <td>回避不可</td>
+          <td>回避は出来ない</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alert alert-danger" role="alert"><i class="bi bi-exclamation-diamond"></i> 回避技能が高値だと他KP様卓で継続探索者として使用出来なくなる場合があります。他KP様卓にて使用される際はそちらのハウスルールをご確認・ご相談下さい。</div>
+    <h3><i class="bi bi-dice-1"></i> ダイスについて</h3>
+    <p>技能ロール、バトルロール、成長ロール等問わず一律5%ルールとする。<br>
+    1～5...クリティカルダイス<br>
+    96～00(100)...ファンブルダイス<br>
+    スペシャルダイスは本卓では採用しない。<br>
+    SANチェックはクリティカル・ファンブルの結果は無視し、数値(成否)のみを確認する。(最高の結果・最悪の結果は発生しない。)</p>
+    <h3><i class="bi bi-stars"></i> クリティカル・ファンブルの扱い</h3>
+    <h4>技能ロールクリティカル</h4>
+    <p>技能ロールにてクリティカルダイスが出た場合、基本成功した箇所について上位情報・効果がある場合、その情報・効果を提示する。<br>
+    基本成功以上の状況が無く、上位の情報を提示出来ない場合は"クリティカルチケット(以下クリチケと略す)"を進呈する</p>
+    <h4>バトルロールクリティカル</h4>
+    <p>バトルロールにてクリティカルダイスが出た場合、ダメージが2倍になるor攻撃必中を選択できる。</p>
+    <h4>技能ロールファンブル</h4>
+    <p>技能ロールにてファンブルダイスが出た場合、失敗どころか、最悪の結果が発生しうる。<br>
+    具体的に、体力の減少、SAN低下、所持品をなくす、壊れてしまう、その技能で調査出来なくなる等が発生する。</p>
+    <h4>バトルでのファンブルの場合</h4>
+    <p>転倒・次のラウンドまで回避・受け流し不可・武器を落とすなどが発生しうる。</p>
+    <h3>クリチケについて</h3>
+    <p>クリチケはダイスでクリティカルを出すが、上位情報が無いなど、それに見合うもの/情報/効果をKPから提示出来ない場合、クリチケを進呈する。<br>
+    クリチケは失敗したロールを成功扱いに、ファンブルしたロールを振り直し、再度挑戦できるようにする。</p>
+    <h3 class="new-rule">成長ロールについて <span class="badge bg-primary">新規追加</span></h3>
+    <p>シナリオ終了後、シナリオ中にクリティカル、ファンブル、初期値を出したロールについては成長ロールを行う。<br>
+    成長ロールはまず、クリティカル・ファンブル・初期値が出たものを技能ロールする。<br>
+    失敗またはファンブルがでたものに関しては、探索者が自分の持ち合わせている知識以上の経験が出来たものとし、成長するものとする。<br>
+    失敗がでた場合：1D10<br>
+    ファンブルがでた場合：1D10+3</p>
+    <h4>成長が出来ない技能の場合の判定</h4>
+    <p>幸運、アイデアなど、能力値によって決まっており成長判定が出来ないものに関しては、他全技能から任意の技能一つを選択し、成長ロールが出来るものとする。</p>
+    <h4>未使用クリチケの扱い</h4>
+    <p>使用されなかったクリチケは成長判定もしくはSAN値回復に使用出来る。<br>
+    成長判定に使用する場合：上記"成長が出来ない技能の場合の判定"と同処理を行う。<br>
+    SAN回復に使用する場合：1D10回復<br>
+    <span class="important-text">クリチケは他シナリオに持ち込み、振替できない。</span></p>
+    <h3>その他</h3>
+    <p>なし。</p>
+  </div>
+  <footer>
+    <div class="footer-menu">
+      <ul>
+        <li><a href="passscenario.html" class="menu-list footer-list">通過済みシナリオ</a></li>
+        <li><a href="gmlist.html" class="menu-list footer-list">GM可能シナリオ</a></li>
+        <li><a href="cochouserule.html" class="menu-list footer-list">CoC6ハウスルール</a></li>
+        <li><a href="https://freecalend.com/open/mem146824_nopopon" class="menu-list footer-list"><i class="bi bi-calendar3"></i> 卓予定</a></li>
+        <li><a href="https://twitter.com/tomysan_103" class="menu-list footer-list"><i class="bi bi-twitter"></i> Twitter</a></li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2022 tomysan_103. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

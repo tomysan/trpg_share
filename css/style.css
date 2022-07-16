@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+body {
+  background-color: #f1f1f1;
+}
+.header-logo {
+  background-color: rgb(249, 191, 78);
+  padding: 20px 0;
+  text-align: center;
+}
+.header-logo h1 {
+  margin: 0;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.header-menu {
+  background-color: #ffffff;
+}
+.header-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0 0 0 80px;
+}
+.header-menu li {
+  padding: 10px 20px;
+}
+.header-menu a {
+  padding: 10px 20px;
+}
+.header-menu-sp {
+  display: none;
+}
+.menu-list {
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.2s;
+}
+.menu-list:hover {
+  color: rgb(205, 229, 197);
+}
+h2 {
+  position: relative;
+  padding: 0.25em 0;
+}
+h2:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+  background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+}
+h3 {
+  border-left: 5px solid #4ccfc9;
+  border-radius: 5px;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12),0 1px 4px rgba(0, 0, 0, 0.12);
+  font-size: 20px;
+  font-weight: normal;
+}
+h4 {
+  background: linear-gradient(transparent 70%, #ffba73 70%);
+  font-weight: normal;
+}
+.gm-list {
+  margin: 50px 0;
+}
+.cockp-list h3 {
+  border-left: 5px solid #f75353;
+}
+.new-rule {
+  border-left: 5px solid #f75353;
+}
+.change-rule {
+  background: linear-gradient(transparent 60%, rgba(255, 255, 255, 0) 60%, #ffc0cb 85%);
+}
+.important-text {
+  color: red;
+}
+.delete-rule {
+  color: #acacac;
+  text-decoration: line-through;
+}
+footer {
+  background-color: rgb(254, 237, 203);
+}
+.footer-menu a {
+  text-decoration: none;
+  color: #000000;
+}
+.footer-menu ul {
+  list-style: none;
+}
+.footer-copyright {
+  text-align: center;
+}
+.footer-list {
+  line-height: 50px;
+}
+.footer-copyright p {
+  margin: 0;
+}
+
+@media (max-width: 960px) {
+  .header-menu ul {
+    padding: 0 0 0 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-menu {
+    display: none;
+  }
+  .header-menu-sp {
+    display: inline;
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    z-index: 10;
+  }
+}
