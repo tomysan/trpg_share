@@ -70,6 +70,9 @@ h4 {
 .cockp-list h3 {
   border-left: 5px solid #f75353;
 }
+.storyplaying-list h3 {
+  border-left: 5px solid #ffadd9;
+}
 .new-rule {
   border-left: 5px solid #f75353;
 }
